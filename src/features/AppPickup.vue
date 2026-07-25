@@ -28,8 +28,8 @@ const imagesPartners = [colissimo, dpd, chronopost, colisPrive]
         <span>confiance</span>
       </h2>
       <p>
-        MANU-TECH est également un point relais Chronopost, Colissimo et DPD officiel. Déposez ou
-        retirez vos colis directement en boutique lors de vos visites — pratique, sécurisé, sans
+        MANU-TECH est également un Point Relais Colissimo, Chronopost, DPD et Colis Privé. Déposez
+        ou retirez vos colis directement en boutique lors de vos visites — pratique, sécurisé, sans
         rendez-vous.
       </p>
     </header>

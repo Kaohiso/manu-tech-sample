@@ -13,17 +13,14 @@ interface dataItemListProps {
 }
 
 const itemListDiagnosis: dataItemListProps[] = [
-  { iconName: Icons.SearchIcon, text: 'Diagnostic électronique automobile' },
-  {
-    iconName: Icons.CircleAlertIcon,
-    text: "Lecture des codes défauts, codages, activations d'options",
-  },
+  { iconName: Icons.SearchIcon, text: 'Diagnostic électronique ECU & Modules annexes' },
+  { iconName: Icons.CircleAlertIcon, text: 'Calibration boîte de vitesses' },
   { iconName: Icons.ActivityIcon, text: 'Test complet de la santé de la batterie' },
   { iconName: Icons.RefreshCcwIcon, text: 'Activation CarPlay / Android Auto' },
   { iconName: Icons.SettingsIcon, text: 'Mise à jour Firmware / GPS' },
   { iconName: Icons.RadioIcon, text: 'Initialisation capteurs TPMS' },
-  { iconName: Icons.ToggleRightIcon, text: "Activation / désactivation d'options" },
-  { iconName: Icons.KeyIcon, text: 'Programmation clé / carte code PIN' },
+  { iconName: Icons.ToggleRightIcon, text: "Activation d'options" },
+  { iconName: Icons.KeyIcon, text: 'Programmation de clé ou carte avec code PIN' },
 ]
 
 const itemListRepair: dataItemListProps[] = [
@@ -47,7 +44,7 @@ const itemListRepair: dataItemListProps[] = [
         <span> résultats garantis</span>
       </h2>
       <p>
-        De l’automobile aux appareils mobiles — nous intervenons sur tous vos équipements
+        De l’automobile aux appareils grand public — nous intervenons sur tous vos équipements
         électroniques avec précision et professionnalisme.
       </p>
     </header>
@@ -58,12 +55,12 @@ const itemListRepair: dataItemListProps[] = [
       :imgSrc="carDiagnostic"
       altSrc="Technicien diagnostiquant une panne sur une voiture."
     >
-      <template #heading>Diagnostic électronique automobile</template>
-      <template #subheading>Diagnostic & programmation électronique</template>
+      <template #heading>Diagnostic Electronique Automobile</template>
+      <template #subheading>Diagnostic · Codage · Apprentissage</template>
       <template #description>
         Equipé des derniers outils de diagnostic professionnel, nous intervenons sur l'ensemble des
-        systèmes électroniques de votre véhicule : lecture des codes défauts, codage d'options et
-        bien plus encore.
+        systèmes électroniques de votre véhicule : lecture des codes défauts, codage, activation
+        d'options et bien plus encore.
       </template>
       <template #image-heading>Diagnostic complet</template>
       <template #image-subheading>Toutes marques & modèles</template>
@@ -89,7 +86,7 @@ const itemListRepair: dataItemListProps[] = [
       <template #image-heading>Remplacement écran</template>
       <template #image-subheading>Smartphone · Tablette · Console</template>
       <template #image-price>50€</template>
-      <template #image-subprice>+ pièce</template>
+      <template #image-subprice>à partir de</template>
     </ServiceMT>
   </AppSection>
 </template>

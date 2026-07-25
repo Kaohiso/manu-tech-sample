@@ -38,16 +38,17 @@ const iconSize = <number>13
       <p>
         MANU-TECH est né de la passion pour l'électronique embarquée et la réparation de précision.
         Depuis plus de 10 ans, nous accompagnons particuliers et professionnels dans le diagnostic,
-        la réparation et l'optimisation de leurs véhicules et équipements électroniques.
+        la réparation et l'optimisation de leurs véhicules et de tous leurs équipements
+        électroniques.
       </p>
       <p>
         Notre philosophie : des réparations fiables qui prolongent la durée de vie des appareils et
-        des véhicules, avec des composants d'origine ou de qualité premium, à des prix justes.
+        des véhicules, avec des composants d'origine ou de qualité premium avec des tarifs justes.
       </p>
 
       <ul>
-        <li>Technicien certifié en électronique embarquée automobile</li>
-        <li>Outillage professionnel : diagnostic et programmation de clefs</li>
+        <li>Technicien certifié en électronique grand public</li>
+        <li>VCI professionnel: diagnostic, programmation de clés et capteurs TPMS</li>
         <li>Station de soudure et matériel de haute précision</li>
         <li>Composants d'origine ou qualité OEM sur toutes interventions</li>
       </ul>
@@ -148,10 +149,12 @@ const iconSize = <number>13
 
       > li {
         margin: 20px 0;
+
         &::before {
           content: '✔';
           color: var(--sys-color-text-accent-primary);
-          padding: 5px;
+          padding: 2px;
+          font-size: 8px;
           margin-right: 5px;
           background-color: var(--app-background-on-background);
           border-radius: var(--ref-size-4);
@@ -183,6 +186,11 @@ const iconSize = <number>13
     .about-text {
       order: 1;
       justify-content: center;
+
+      ul > li::before {
+        padding: 5px;
+        font-size: 8px;
+      }
     }
   }
 }

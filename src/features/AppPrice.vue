@@ -14,11 +14,7 @@ interface TarifProps {
 }
 
 const tarifs: TarifProps[] = [
-  {
-    id: 1,
-    content: ['Tarif fixe', '35'],
-    heading: 'Diagnostic électronique automobile',
-  },
+  { id: 1, content: ['Tarif fixe', '35'], heading: 'ECU & Modules annexes' },
   { id: 2, content: ['A partir de', '40'], heading: "Activation d'option" },
   { id: 3, content: ['A partir de', '50'], heading: 'Codage' },
   { id: 4, content: ['A partir de', '50'], heading: 'Réparation électronique' },

@@ -15,7 +15,7 @@ const iconSize = 12
 <template>
   <AppSection class="app-hero" id-section="home">
     <div class="text-content">
-      <ChipMT>
+      <ChipMT class="chip">
         <DotIcon :size="iconSize * 2" color="var(--sys-color-status-open)" />
         <Eyebrow>Expert certifié · Ars-sur-moselle</Eyebrow>
       </ChipMT>
@@ -25,9 +25,11 @@ const iconSize = 12
         <span>& Réparation Electronique</span>
       </h1>
       <p>
-        Spécialiste en diagnostic et réparation d'ECU automobiles, smartphones, tablettes, consoles
-        portables et équipements électroniques. Composants d'origine ou premium — tarifs
-        transparents.
+        <span>
+          Spécialiste en diagnostic et réparation d'ECU automobiles, Smartphones, tablettes,
+          consoles portables, TV ou tous équipements électroniques.
+        </span>
+        <span>Composants d'origine ou premium — tarifs transparents.</span>
       </p>
 
       <div class="container-buttons">
@@ -49,7 +51,7 @@ const iconSize = 12
         </div>
         <div>
           <p>500+</p>
-          <p>véhicules traités</p>
+          <p>Interventions réalisées</p>
         </div>
         <div>
           <p>100%</p>
@@ -63,7 +65,7 @@ const iconSize = 12
         src="../assets/images/electronic-soldering.jpg"
         alt="Image détaillée de mains soudant et réparant une carte de circuit imprimé électronique."
       />
-      <div class="text-image-hero">Interface OBD-II Pro</div>
+      <div class="text-image-hero">VCI OBD-II Pro</div>
 
       <div class="container-image-hero-small">
         <img
@@ -72,7 +74,7 @@ const iconSize = 12
           alt="Vue macro détaillée d'une carte de circuit imprimé mettant en avant des microchips et des composants électroniques."
         />
         <div class="text-image-hero">
-          <div>Réparation PCB</div>
+          <div>Réparation ECU</div>
           <div>Précision & qualité</div>
         </div>
       </div>
@@ -109,6 +111,10 @@ const iconSize = 12
     height: fit-content;
     gap: 30px;
 
+    .chip {
+      visibility: hidden;
+    }
+
     .container-buttons {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -117,7 +123,7 @@ const iconSize = 12
 
     .container-tags {
       display: flex;
-      gap: 10px;
+      gap: 20px;
 
       > div {
         display: grid;
@@ -235,6 +241,16 @@ const iconSize = 12
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
     justify-content: center;
+  }
+}
+
+@media (min-height: 745px) {
+  :deep(.app-hero) {
+    .text-content {
+      .chip {
+        visibility: visible;
+      }
+    }
   }
 }
 </style>
