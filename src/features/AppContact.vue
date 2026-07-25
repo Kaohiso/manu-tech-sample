@@ -2,7 +2,7 @@
 import AppSection from '@/features/layout/AppSection.vue'
 import EyebrowMT from '@/ui/EyebrowMT.vue'
 import { ChevronRightIcon, ClockIcon, MapPinIcon, MessageCircleIcon, PhoneIcon } from '@lucide/vue'
-import { callPhoneNumber, smsPhoneNumber, whatsApp } from '@/data/contactInformation'
+import { callPhoneNumber, whatsApp } from '@/data/contactInformation'
 import CardMT from '@/ui/CardMT.vue'
 import ButtonMT from '@/ui/ButtonMT.vue'
 import ScheduleMT from '@/ui/ScheduleMT.vue'

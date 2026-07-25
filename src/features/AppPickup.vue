@@ -9,12 +9,7 @@ import colissimo from '../assets/images/logo/colissimo-logo.png'
 import dpd from '../assets/images/logo/dpd-logo.png'
 import chronopost from '../assets/images/logo/chronopost-logo.png'
 import colisPrive from '../assets/images/logo/colis-prive-logo.png'
-
-const schedule = [
-  { key: 'Lundi - Vendredi', firstValue: '9h - 12h30', lastValue: '13h30 - 18h30' },
-  { key: 'Samedi', lastValue: '9h - 12h30' },
-  { key: 'Dimanche', lastValue: 'Fermé' },
-]
+import { schedule } from '@/data/contact'
 
 const imagesPartners = [colissimo, dpd, chronopost, colisPrive]
 </script>

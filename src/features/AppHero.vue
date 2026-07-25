@@ -62,7 +62,7 @@ const iconSize = 12
     <div v-if="isDesktop" class="image-content">
       <img
         class="image-main-hero"
-        src="../assets/images/electronic-soldering.jpg"
+        src="../assets/images/diagnostic-auto.jpg"
         alt="Image détaillée de mains soudant et réparant une carte de circuit imprimé électronique."
       />
       <div class="text-image-hero">VCI OBD-II Pro</div>

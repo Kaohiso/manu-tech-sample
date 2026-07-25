@@ -4,12 +4,10 @@ import EyebrowMT from '@/ui/EyebrowMT.vue'
 import centerConsoleZoe from '@/assets/images/gallery/center-console-zoe.jpg'
 import ecu from '@/assets/images/gallery/ecu.jpg'
 import electronicComponent from '@/assets/images/gallery/electronic-component.jpg'
-import krups from '@/assets/images/gallery/krups.jpg'
 import nintendoSwitch from '@/assets/images/gallery/nintendo-switch.jpg'
 import pcbCar from '@/assets/images/gallery/pcb-car.jpg'
 import pcbLaptop from '@/assets/images/gallery/pcb-laptop.jpg'
 import puceSoic from '@/assets/images/gallery/puce-soic.jpg'
-import rLink from '@/assets/images/gallery/r-link.jpg'
 import tvLed from '@/assets/images/gallery/tv-led.jpg'
 
 interface Props {
@@ -35,11 +33,6 @@ const images: Props[] = [
     alt: 'Composant électronique démonté pour diagnostic',
   },
   {
-    id: 4,
-    src: krups,
-    alt: "Détail du panneau de contrôle d'une machine à café Krups, montrant les voyants (détartrage, température).",
-  },
-  {
     id: 5,
     src: nintendoSwitch,
     alt: "Intérieur d'une console Nintendo Switch démontée, montrant la carte mère, le ventilateur et la batterie (référence HAC-003 visible).",
@@ -54,11 +47,6 @@ const images: Props[] = [
     id: 8,
     src: puceSoic,
     alt: "Photo macro (très rapprochée) d'un composant électronique (puce SOIC à 8 broches) soudé sur un circuit imprimé, référence '28000766' visible.",
-  },
-  {
-    id: 9,
-    src: rLink,
-    alt: "Écran tactile d'un système multimédia embarqué Renault (R-LINK), affichant l'interface Apple CarPlay avec les icônes Téléphone, Musique, Plans, Messages.",
   },
   {
     id: 10,

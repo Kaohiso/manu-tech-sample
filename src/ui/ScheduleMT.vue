@@ -21,11 +21,14 @@ function updateColorWhenClosed(status: string) {
 <template>
   <div class="container">
     <div v-for="row in content" class="schedule">
-      <span class="key">{{ row.key }}</span>
-      <span class="value first-value">{{ row.firstValue }}</span>
-      <span class="value last-value" :style="updateColorWhenClosed(row.lastValue)">{{
-        row.lastValue
-      }}</span>
+      <p class="key">{{ row.key }}</p>
+      <p>
+        <span class="value first-value">{{ row.firstValue }}</span>
+
+        <span class="value last-value" :style="updateColorWhenClosed(row.lastValue)">
+          {{ row.lastValue }}
+        </span>
+      </p>
     </div>
   </div>
 </template>
@@ -37,10 +40,19 @@ function updateColorWhenClosed(status: string) {
 
   .schedule {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+
+    > p:last-child {
+      display: flex;
+      justify-content: end;
+      flex-wrap: wrap;
+
+      > span:nth-of-type(2) {
+        margin-left: 20px;
+      }
+    }
 
     .key {
-      grid-column: 2 span;
       color: var(--sys-color-text-tertiary);
     }
 
@@ -57,6 +69,16 @@ function updateColorWhenClosed(status: string) {
     .last-value {
       text-align: end;
       grid-column-start: 5;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .schedule {
+      > p {
+        font-size: 12px;
+      }
     }
   }
 }

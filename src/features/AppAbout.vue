@@ -17,7 +17,7 @@ const iconSize = <number>13
     <div class="about-image">
       <div class="fitter">
         <img
-          src="../assets/images/electronics-workshop.jpg"
+          src="../assets/images/workshop.jpg"
           alt="Réparation et maintenance électroniques pratiques, avec un accent particulier sur les cartes de circuits imprimés."
         />
         <div class="container-tag">

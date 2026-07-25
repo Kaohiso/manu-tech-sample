@@ -5,7 +5,7 @@ import ServiceMT from '@/ui/ServiceMT.vue'
 import AppVehicles from '@/features/AppVehicles.vue'
 import AppSection from '@/features/layout/AppSection.vue'
 import carDiagnostic from '@/assets/images/car-diagnostic.jpg'
-import repairSmartphone from '@/assets/images/repair-smartphone.jpg'
+import repairSmartphone from '@/assets/images/repair-iphone.jpg'
 
 interface dataItemListProps {
   iconName: Icons.LucideIcon
@@ -77,7 +77,7 @@ const itemListRepair: dataItemListProps[] = [
       :imgSrc="repairSmartphone"
       altSrc="Changement d'écran sur un téléphone dont l'écran était cassé."
     >
-      <template #heading>Réparation Électronique</template>
+      <template #heading>Réparation Electronique</template>
       <template #subheading>Smartphones · Tablettes · Consoles</template>
       <template #description>
         Nous intervenons sur tous les appareils électroniques grand public avec rigueur et

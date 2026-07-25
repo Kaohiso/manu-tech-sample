@@ -96,7 +96,7 @@ const contacts: ContactProps[] = [
 
 const schedule = [
   { key: 'Lundi - Vendredi', firstValue: '9h - 12h30', lastValue: '13h30 - 18h30' },
-  { key: 'Samedi', lastValue: '9h - 12h30' },
+  { key: 'Samedi', lastValue: '10h30 - 12h30' },
   { key: 'Dimanche', lastValue: 'Fermé' },
 ]
 
