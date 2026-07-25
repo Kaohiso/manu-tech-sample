@@ -48,7 +48,7 @@ import { contacts, schedule, adress } from '@/data/contact'
           <ButtonMT
             variant="text-only"
             icon-position="right"
-            :href="smsPhoneNumber"
+            :href="contact.footer.externalLink"
             textPosition="text-start"
           >
             <ChevronRightIcon :size="11" />
