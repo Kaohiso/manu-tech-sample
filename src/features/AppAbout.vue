@@ -22,7 +22,7 @@ const iconSize = <number>13
         />
         <div class="container-tag">
           <p>10+</p>
-          <EyebrowMT variant="on-card">années d'expertise</EyebrowMT>
+          <EyebrowMT variant="tag">années d'expertise</EyebrowMT>
         </div>
       </div>
     </div>
@@ -75,9 +75,9 @@ const iconSize = <number>13
 <style lang="css" scoped>
 :deep(.app-about) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
   align-items: center;
-  gap: 40px;
+  gap: 88px;
 
   .about-image {
     order: 1;
@@ -129,7 +129,7 @@ const iconSize = <number>13
     order: -1;
     display: grid;
     text-align: start;
-    justify-items: start;
+    justify-items: center;
     row-gap: 20px;
 
     > p {
@@ -137,9 +137,8 @@ const iconSize = <number>13
     }
 
     .container-card {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      display: inline-flex;
+      flex-wrap: wrap;
       gap: 12px;
     }
 
@@ -163,7 +162,7 @@ const iconSize = <number>13
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   :deep(.app-about) {
     .about-image {
       order: -1;
@@ -183,6 +182,7 @@ const iconSize = <number>13
 
     .about-text {
       order: 1;
+      justify-content: center;
     }
   }
 }

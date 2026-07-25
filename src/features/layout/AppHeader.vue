@@ -18,7 +18,7 @@ const links: Link[] = [
   { id: '#contact', label: 'Contact' },
 ]
 
-const isMobile = useMediaQuery('(max-width: 1025px)')
+const isMobile = useMediaQuery('(max-width: 1024px)')
 </script>
 
 <template>

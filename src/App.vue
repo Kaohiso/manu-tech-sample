@@ -31,6 +31,7 @@ import AppFooter from '@/features/layout/AppFooter.vue'
 
 <style>
 :root {
+  color-scheme: light;
   --app-inline-size: var(--ref-size-1280);
   --app-radius: var(--ref-size-12);
   --app-radius-icon: var(--ref-size-6);

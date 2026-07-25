@@ -47,7 +47,7 @@ const { iconSize = 12 } = defineProps<CardMtProps>()
     </footer>
 
     <ChipMT v-if="tag" class="chip-on-card-mt">
-      <EyebrowMT variant="on-card">
+      <EyebrowMT variant="on-card-highlight">
         <slot name="chip-on-card-mt" />
       </EyebrowMT>
     </ChipMT>

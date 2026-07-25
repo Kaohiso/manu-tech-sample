@@ -1,13 +1,23 @@
 <script setup lang="ts">
 interface Props {
-  variant?: 'in-card' | 'caption' | 'filled-blue' | 'green-border' | 'orange' | 'open' | 'on-card'
+  variant?:
+    | 'in-card'
+    | 'caption'
+    | 'filled-blue'
+    | 'green-border'
+    | 'orange'
+    | 'open'
+    | 'on-card'
+    | 'on-card-highlight'
+    | 'tag'
+  weight?: 'textBold'
 }
 
 defineProps<Props>()
 </script>
 
 <template>
-  <span class="app-eyebrow" :class="[variant]">
+  <span class="app-eyebrow" :class="[variant, weight]">
     <slot />
   </span>
 </template>
@@ -36,8 +46,11 @@ defineProps<Props>()
   }
 
   &.on-card {
-    font-weight: var(--ref-font-weight-bold);
-    color: var(--ref-color-white);
+    color: var(--sys-color-text-primary);
+  }
+
+  &.tag {
+    color: var(--sys-color-text-secondary);
   }
 
   &.orange {
@@ -46,6 +59,11 @@ defineProps<Props>()
 
   &.open {
     color: var(--sys-color-status-open);
+  }
+
+  &.on-card-highlight {
+    color: var(--ref-color-white);
+    font-weight: var(--ref-font-weight-bold);
   }
 }
 </style>

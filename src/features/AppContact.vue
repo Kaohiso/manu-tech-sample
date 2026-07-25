@@ -38,7 +38,7 @@ import { contacts, schedule, adress } from '@/data/contact'
               {{ contact.content.value }}
             </h4>
 
-            <p class="caption">
+            <p class="caption" :class="contact.variant">
               {{ contact.content.caption }}
             </p>
           </div>
@@ -155,6 +155,10 @@ import { contacts, schedule, adress } from '@/data/contact'
 
     .caption {
       font-size: var(--ref-size-11);
+
+      &.filled-blue {
+        color: hsl(from var(--ref-color-white) calc(h + 213) calc(s + 87) calc(l - 13));
+      }
     }
   }
 
