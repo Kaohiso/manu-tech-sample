@@ -4,8 +4,8 @@ import * as Icons from '@lucide/vue'
 import ServiceMT from '@/ui/ServiceMT.vue'
 import AppVehicles from '@/features/AppVehicles.vue'
 import AppSection from '@/features/layout/AppSection.vue'
-import carDiagnostic from '@/assets/images/car-diagnostic.jpg'
-import repairSmartphone from '@/assets/images/repair-iphone.jpg'
+import carDiagnostic from '@/assets/images/ai-diagnostic.jpeg'
+import repairSmartphone from '@/assets/images/ai-repair.jpeg'
 
 interface dataItemListProps {
   iconName: Icons.LucideIcon
@@ -53,7 +53,7 @@ const itemListRepair: dataItemListProps[] = [
       :graphicIcon="Icons.CarIcon"
       :listServices="itemListDiagnosis"
       :imgSrc="carDiagnostic"
-      altSrc="Technicien diagnostiquant une panne sur une voiture."
+      altSrc="Illustration d'un diagnostic automobile"
     >
       <template #heading>Diagnostic Electronique Automobile</template>
       <template #subheading>Diagnostic · Codage · Apprentissage</template>
@@ -75,7 +75,7 @@ const itemListRepair: dataItemListProps[] = [
       :graphicIcon="Icons.HammerIcon"
       :listServices="itemListRepair"
       :imgSrc="repairSmartphone"
-      altSrc="Changement d'écran sur un téléphone dont l'écran était cassé."
+      altSrc="Illustration d'une réparation d'écran de smartphone"
     >
       <template #heading>Réparation Electronique</template>
       <template #subheading>Smartphones · Tablettes · Consoles</template>

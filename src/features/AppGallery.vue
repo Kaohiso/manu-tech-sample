@@ -1,14 +1,16 @@
 <script lang="ts" setup>
 import AppSection from '@/features/layout/AppSection.vue'
 import EyebrowMT from '@/ui/EyebrowMT.vue'
-import centerConsoleZoe from '@/assets/images/gallery/center-console-zoe.jpg'
-import ecu from '@/assets/images/gallery/ecu.jpg'
-import electronicComponent from '@/assets/images/gallery/electronic-component.jpg'
-import nintendoSwitch from '@/assets/images/gallery/nintendo-switch.jpg'
-import pcbCar from '@/assets/images/gallery/pcb-car.jpg'
-import pcbLaptop from '@/assets/images/gallery/pcb-laptop.jpg'
-import puceSoic from '@/assets/images/gallery/puce-soic.jpg'
-import tvLed from '@/assets/images/gallery/tv-led.jpg'
+import zoe from '@/assets/images/gallery/zoe.jpeg'
+import rLink from '@/assets/images/gallery/r-link.jpeg'
+import volkswagen from '@/assets/images/gallery/volkswagen.jpeg'
+import pcb from '@/assets/images/gallery/pcb.jpeg'
+import chip from '@/assets/images/gallery/chip.jpeg'
+import monitor from '@/assets/images/gallery/monitor.jpeg'
+import led from '@/assets/images/gallery/led.jpeg'
+import ps2 from '@/assets/images/gallery/ps2.jpeg'
+import nintendo from '@/assets/images/gallery/nintendo.jpeg'
+import samsung from '@/assets/images/gallery/samsung.jpeg'
 
 interface Props {
   id: number
@@ -19,39 +21,53 @@ interface Props {
 const images: Props[] = [
   {
     id: 1,
-    src: centerConsoleZoe,
-    alt: "Console centrale d'une Renault Zoé, avec écran affichant Android Auto (carte GPS et lecteur de musique), commandes de climatisation.",
+    src: zoe,
+    alt: "Écran tactile d'une Renault Zoé avec navigation et musique",
   },
   {
     id: 2,
-    src: ecu,
-    alt: "Carte électronique complète d'un calculateur moteur (ECU) automobile, ouverte, avec de nombreux composants soudés dont un microcontrôleur Infineon visible, posée sur un établi.",
+    src: rLink,
+    alt: "Écran multimédia R-Link d'un véhicule Renault",
   },
   {
     id: 3,
-    src: electronicComponent,
-    alt: 'Composant électronique démonté pour diagnostic',
+    src: volkswagen,
+    alt: 'Autoradios Volkswagen en cours de mise à jour logicielle',
+  },
+  {
+    id: 4,
+    src: pcb,
+    alt: 'Carte électronique de calculateur automobile (ECU) ouverte',
   },
   {
     id: 5,
-    src: nintendoSwitch,
-    alt: "Intérieur d'une console Nintendo Switch démontée, montrant la carte mère, le ventilateur et la batterie (référence HAC-003 visible).",
+    src: chip,
+    alt: 'Gros plan sur une puce électronique soudée sur circuit imprimé',
   },
-  { id: 6, src: pcbCar, alt: 'img1' },
+  {
+    id: 6,
+    src: monitor,
+    alt: 'Écran affichant le logo Manu-Tech, diagnostic auto et réparation électronique',
+  },
   {
     id: 7,
-    src: pcbLaptop,
-    alt: "Intérieur d'un ordinateur portable ouvert, montrant la carte mère, le ventilateur, un SSD, la RAM et la batterie.",
+    src: led,
+    alt: "Dalle de rétroéclairage LED d'un téléviseur démontée",
   },
   {
     id: 8,
-    src: puceSoic,
-    alt: "Photo macro (très rapprochée) d'un composant électronique (puce SOIC à 8 broches) soudé sur un circuit imprimé, référence '28000766' visible.",
+    src: ps2,
+    alt: 'Console PlayStation 2 allumée devant un téléviseur',
+  },
+  {
+    id: 9,
+    src: nintendo,
+    alt: "Carte mère d'une console Nintendo Switch ouverte",
   },
   {
     id: 10,
-    src: tvLed,
-    alt: "Panneau arrière d'un écran de télévision LED démonté, avec les bandes de rétroéclairage (LED strips) allumées et visibles.",
+    src: samsung,
+    alt: 'Smartphone Samsung allumé posé sur son emballage',
   },
 ]
 </script>

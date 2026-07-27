@@ -3,7 +3,16 @@ const smsPhoneNumber = 'sms:+33787334335'
 const mailTo = 'mailto:manu-tech@orange.fr'
 const whatsApp = 'https://wa.me/33787334335'
 const leboncoinManuTech =
-  'https://www.leboncoin.fr/ad/services_de_reparations_electroniques/3105467062'
+  'https://www.leboncoin.fr/ad/services_de_reparations_electroniques/3104792829'
 const facebookManuTech = 'https://www.facebook.com/profile.php?id=100083407657487'
+const pickup = 'https://relais.pickup.fr/57130/ARS_SUR_MOSELLE/MANU_TECH'
 
-export { callPhoneNumber, smsPhoneNumber, mailTo, whatsApp, leboncoinManuTech, facebookManuTech }
+export {
+  callPhoneNumber,
+  smsPhoneNumber,
+  mailTo,
+  whatsApp,
+  leboncoinManuTech,
+  facebookManuTech,
+  pickup,
+}

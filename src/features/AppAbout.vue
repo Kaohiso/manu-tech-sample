@@ -16,10 +16,7 @@ const iconSize = <number>13
   <AppSection class="app-about" id-section="about">
     <div class="about-image">
       <div class="fitter">
-        <img
-          src="../assets/images/workshop.jpg"
-          alt="Réparation et maintenance électroniques pratiques, avec un accent particulier sur les cartes de circuits imprimés."
-        />
+        <img src="../assets/images/ai-about.jpeg" alt="Illustration d'un professionnel" />
         <div class="container-tag">
           <p>10+</p>
           <EyebrowMT variant="tag">années d'expertise</EyebrowMT>

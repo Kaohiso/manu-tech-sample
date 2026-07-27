@@ -5,6 +5,7 @@ import {
   facebookManuTech,
   leboncoinManuTech,
   mailTo,
+  pickup,
 } from '@/data/contactInformation'
 import ButtonMT from '@/ui/ButtonMT.vue'
 import EyebrowMT from '@/ui/EyebrowMT.vue'
@@ -16,7 +17,7 @@ const links: Link[] = [
   { id: '#home', label: 'Accueil' },
   { id: '#about', label: 'A propos' },
   { id: '#services', label: 'Services' },
-  { id: '#price', label: 'Tarif' },
+  { id: '#price', label: 'Tarifs' },
   { id: '#whyUs', label: 'Pourquoi nous' },
   { id: '#gallery', label: 'Galerie' },
   { id: '#pickup', label: 'Point relais' },
@@ -32,7 +33,7 @@ const links: Link[] = [
           <img :src="manuTechLogo" class="manu-logo" />
           <p class="paragraphe">
             Expert en diagnostic ECU automobile et réparation d'appareils électroniques à
-            Ars-sur-Moselle. Fiabilité, précision, prix justes.
+            Ars-sur-Moselle. Fiabilité, précision, tarifs justes.
           </p>
         </div>
 
@@ -68,15 +69,27 @@ const links: Link[] = [
                 <span>Ars-sur-Moselle, France</span>
               </li>
               <li>
-                <span>Lun–Ven : 9h00–18h30 </span>
-                <span>Samedi : 9h00–14h00</span>
+                <div>
+                  <p>Lun–Ven :</p>
+                  <p>
+                    <span>9h - 12h30</span>
+                    <span>13h30 - 18h30</span>
+                  </p>
+                  <p>Samedi :</p>
+                  <p>10h30 - 12h30</p>
+                  <p>Dimanche :</p>
+                  <p>Fermé</p>
+                </div>
               </li>
               <li>
+                <ButtonMT :href="facebookManuTech" variant="text-only" text-position="text-start">
+                  <img src="../../assets/images/logo/facebook-logo.png" class="brand-logo" />
+                </ButtonMT>
                 <ButtonMT :href="leboncoinManuTech" variant="text-only" text-position="text-start">
                   <img src="../../assets/images/logo/leboncoin-logo.png" class="brand-logo" />
                 </ButtonMT>
-                <ButtonMT :href="facebookManuTech" variant="text-only" text-position="text-start">
-                  <img src="../../assets/images/logo/facebook-logo.png" class="brand-logo" />
+                <ButtonMT :href="pickup" variant="text-only" text-position="text-start">
+                  <img src="../../assets/images/logo/pickup-logo.png" class="brand-logo" />
                 </ButtonMT>
               </li>
             </ul>
@@ -127,6 +140,7 @@ const links: Link[] = [
         .brand-logo {
           width: 65px;
           height: auto;
+          border-radius: 0;
         }
 
         .nav-eyebrow {
@@ -151,6 +165,21 @@ const links: Link[] = [
           gap: 10px;
           list-style: none;
           text-align: start;
+
+          > div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            > p {
+              &:nth-of-type(even) {
+                text-align: end;
+              }
+
+              &:has(span) {
+                display: grid;
+              }
+            }
+          }
         }
 
         .icon {

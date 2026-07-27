@@ -11,7 +11,7 @@ import chronopost from '../assets/images/logo/chronopost-logo.png'
 import colisPrive from '../assets/images/logo/colis-prive-logo.png'
 import { schedule } from '@/data/contact'
 
-const imagesPartners = [colissimo, dpd, chronopost, colisPrive]
+const imagesPartners = [colissimo, chronopost, dpd, colisPrive]
 </script>
 
 <template>
