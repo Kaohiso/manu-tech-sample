@@ -139,7 +139,7 @@ import { contacts, schedule, adress } from '@/data/contact'
 
   .contact-information {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: var(--ref-size-20);
   }
 

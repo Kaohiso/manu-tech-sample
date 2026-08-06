@@ -4,12 +4,11 @@ import {
   callPhoneNumber,
   facebookManuTech,
   leboncoinManuTech,
-  mailTo,
   pickup,
 } from '@/data/contactInformation'
 import ButtonMT from '@/ui/ButtonMT.vue'
 import EyebrowMT from '@/ui/EyebrowMT.vue'
-import { MailIcon, MapPinIcon, PhoneIcon } from '@lucide/vue'
+import { MapPinIcon, PhoneIcon } from '@lucide/vue'
 
 type Link = { id: string; label: string }
 
@@ -56,12 +55,6 @@ const links: Link[] = [
                 <ButtonMT :href="callPhoneNumber" variant="text-only" text-position="text-start">
                   <PhoneIcon :size="12" class="icon" />
                   <span>+33 7 87 33 43 35</span>
-                </ButtonMT>
-              </li>
-              <li>
-                <ButtonMT :href="mailTo" variant="text-only" text-position="text-start">
-                  <MailIcon :size="12" class="icon" />
-                  <span>manu-tech@orange.fr</span>
                 </ButtonMT>
               </li>
               <li>

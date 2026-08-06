@@ -76,22 +76,22 @@ const contacts: ContactProps[] = [
       externalLink: smsPhoneNumber,
     },
   },
-  {
-    id: 4,
-    type: 'single',
-    header: {
-      icon: MailIcon,
-    },
-    content: {
-      heading: 'Email',
-      value: 'manu-tech@orange.fr',
-      caption: 'Réponse sous 24h ouvrées',
-    },
-    footer: {
-      buttonText: 'Envoyer un email',
-      externalLink: mailTo,
-    },
-  },
+  // {
+  //   id: 4,
+  //   type: 'single',
+  //   header: {
+  //     icon: MailIcon,
+  //   },
+  //   content: {
+  //     heading: 'Email',
+  //     value: 'manu-tech@orange.fr',
+  //     caption: 'Réponse sous 24h ouvrées',
+  //   },
+  //   footer: {
+  //     buttonText: 'Envoyer un email',
+  //     externalLink: mailTo,
+  //   },
+  // },
 ]
 
 const schedule = [
